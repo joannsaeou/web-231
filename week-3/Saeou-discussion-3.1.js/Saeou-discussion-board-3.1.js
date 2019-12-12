@@ -8,11 +8,16 @@ Title: Discussion Board 3.1
 
 */
 
+//header
 var header = require('../week-3/Saeou-header.js');
 
 console.log(header.display('Saeou', 'Joann', 'discussion board 3.1'));
 
-var purses = ["Chanel", "Gucci", "Coach", "Michael Kors", "Hermes", "LV"];
+
+//start program
+
+// created using variables and the "for"  syntax to test out 
+var purses = ["Chanel",  "Gucci", "Coach", "Michael Kors", "Hermes", "LV"];
 var text = "";
 var i;
 for (i = 6; i < purse.topchart; i++) {
@@ -22,3 +27,4 @@ for (i = 6; i < purse.topchart; i++) {
 
 console.log( "purses" + 'text' + 'i' + '\n for'); 
 
+//end program
