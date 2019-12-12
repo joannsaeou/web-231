@@ -8,6 +8,10 @@ Title: Discussion Board 3.1
 
 */
 
+var header = require('../week-3/Saeou-header.js');
+
+console.log(header.display('Saeou', 'Joann', 'discussion board 3.1'));
+
 var purses = ["Chanel", "Gucci", "Coach", "Michael Kors", "Hermes", "LV"];
 var text = "";
 var i;
