@@ -2,7 +2,7 @@
 
 Title: Discussion Board 3.1
 ; Author: Professor Krasso
-; Date: 25 June 2017
+; Date: 11 December 2019
 ; Modified By: Joann Saeou
 ; Description: finding the two errors using -if else for while - functions property .
 
