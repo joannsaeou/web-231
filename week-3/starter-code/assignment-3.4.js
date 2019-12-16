@@ -1,3 +1,54 @@
+const header = require('../../week-2/Saeou-header');
+
+
+console.log(header.display("Joann", "Saeou", "Exercise 3.4  for loop"));
+console.log("\n");
+
+//start program
+
+/* 
+
+Title: assignment-3.4
+; Author: Professor Krasso
+; Date: 15 December 2019
+; Modified By: Joann Saeou
+; Description: for-loop javascript
+
+*/
+
+function logMismatch (heightBrock, heightMisty) {
+  console.log(heightBrock + " and " + heightMisty + " do not match!");
+
+}
+
+
+
+function logMatch (heightBrock, heightMisty) {
+  console.log(heightBrock + " and " + heightMisty + " match!");
+
+}
+
+
+
+var x = 6; 
+for(var i =  0; i < 10; i++) {
+  var y = randomNumber(); 
+  if(x === y){ 
+    logMatch(x, y);
+  }
+  else{
+    logMismatch(x, y);
+  }
+
+
+}
+
+
+
+
+
+
+
 /*
   // Below is what I am expecting to see when I run your program - remove this before submitting your work
   // 50% of you will not read this and lose 25% of the awardable points.
