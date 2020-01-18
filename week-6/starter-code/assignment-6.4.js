@@ -1,4 +1,3 @@
-
 const header = require('../../week-2/Saeou-header');
 
 
@@ -17,13 +16,13 @@ console.log("\n");
 
 //start program 
 
-
+//nested object literal 
 var ticket = { 
 id: 105,
 Name: "Bob Jones",
 dateCreated: "01/17/2020",
 priority: "most concern",
-person: {  
+person: {    //second nested object literal under ticket variable
   id: 105,
   firstName: "Bob",
   lastName: "Jones",
@@ -37,7 +36,7 @@ console.log('Ticket ' + ticket.id + ' was created on ' + ticket.dateCreated + " 
  ticket.person.lastName + " (  " + ticket.person.jobTitle + " ) " ) 
 
 
-
+//end of program 
 
 
 
