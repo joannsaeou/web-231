@@ -1,0 +1,13 @@
+/* CSS file for my 
+JavaScript week-7
+*/
+th { color: white;
+    background-color: blue;
+
+
+
+ }
+ tr:nth-child(even) { background-color: lightblue;
+
+
+ }

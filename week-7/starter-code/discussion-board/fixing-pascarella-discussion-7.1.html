@@ -1,0 +1,80 @@
+<!-- /*
+================================================================
+; Title: Discussion Board 7.1 - JavaScript in Web Browsers
+; Author: Pascal Pascarella
+; Date: 23 January 2020
+; Description: This page displays a manipuable TO-DO list. When
+; adding an item, it should appear below the text box with a
+; functioning DELETE button.
+=================================================================
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: rgb(88, 62, 62);
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>A To-Do List</h1>
+
+    <div>
+      <label for="item">Enter new item:</label>
+      <input type="text" name="item" id="item" placeholder="Type here">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+      //Program Start
+
+      // Variable Declaration
+      const list = document.querySelector('<ul>');         // Holds reference to ul element
+      const input = document.querySelector('<input>');     // Holds reference to input element
+      const button = document.querySelector('<button>');   // Holds reference to button element
+
+      // Functions
+      button.onclick = function() {   // Runs in response to button being clicked
+        let myItem = input.value;     // Stores current value of input element in variable
+        input.value = '';             // Empties input element by setting value to empty string
+
+      // New elements stored as variables
+        const listItem = documen.createElement('<li>');
+        const listText = document.createElement('<span>');
+        const listBtn = document.createElement('<button>');
+
+      // Modifying Line Items
+        listItem.appendChild(listText);   // Appends span as child of list item
+        listText.textContent = myItem;    // Sets text content of span to input element value saved earlier
+        listItem.appendChild(listBtn);    // Appends button as child of list item
+        listBtn.textContent = 'Delete';   // Sets text content of button to DELETE
+        list.appendChild(listItem);       // Appends list item as child of list
+
+      // Removing List Items
+        listBtn.onclick = function(e) {   //Event handler for DELETE button, deletes entire list item it is inside when clicked
+          listRemoveChild(listItem);
+        }
+
+      // Focus Text Box Input
+        input.focus();    //Focus input element so it is ready for entering next TO-DO item
+      }
+
+      // Program End
+    </script>
+  </body>
+</html>
