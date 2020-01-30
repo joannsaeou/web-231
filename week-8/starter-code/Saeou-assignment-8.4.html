@@ -1,0 +1,85 @@
+
+<!--
+============================================
+; Title:  assignment-8.4.html
+; Author: Joann Saeou
+; Date:   28 January 2020
+; Description: 
+;===========================================
+-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <style type="text/css">
+    #employee tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+<body>
+
+<div id="emps"></div>
+
+<script type="text/javascript">
+function employee(id, firstName, lastName, title){
+  this.id=id;
+  this.firstName=firstName;
+  this.lastName=lastName;
+  this.title=title;
+
+}
+
+var employees = [new employee(1, "Thomas", "Edison", "Software Engineer"),
+new employee(2, "Benjamin", "Franklin", "Programmer"),
+new employee(3, "Nikola", "Tesla", "Project Manager"),
+new employee(4, "Charles", "Babbage", "product Manager"),
+new employee(5, "Alexander", "Bell", "Business Analyst")   ]
+function getEmployee(id){
+  for(var i = 0;i<employees.length;i++){
+    if(employees[i].id ==id){
+      alert(employees[i].id + " " + employees[i].firstName + " " + employees[i].lastName + " " + employees[i].title)
+    }
+  }
+}
+var output = "<table id = 'employee'>";
+output+="<tr><th>id</th><th>Firstname</th><th>lastname</th><th>title</th></tr>";
+for(var i = 0;i<employees.length;i++){
+  output+="<tr>";
+  output+="<td>" + employees[i].id+"</td>";
+  output+="<td>" + employees[i].firstName+"</td>";
+  output+="<td>" + employees[i].lastName+"</td>";
+  output+="<td>" + employees[i].title+"</td>";
+  output+="</tr>";
+}
+output+="</table>"; 
+document.getElementById("emps").innerHTML=output;
+
+
+
+  // jQuery onClick event
+  // Don't remove this, just add your code to the body of the event (curly braces)
+  $(function () {
+    $("table tr").click(function () {
+var clickemployee= $(this).find("td:first").html();
+getEmployee(clickemployee);
+    })
+  });
+</script>
+</body>
+</html>

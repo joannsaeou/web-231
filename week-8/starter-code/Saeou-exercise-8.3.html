@@ -1,0 +1,58 @@
+<!--
+============================================
+; Title:  exercise-8.3.html
+; Author: Joann Saeou
+; Date:   29 January 2020
+; Description: 
+;===========================================
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="stylesheet.css">
+
+
+
+
+</head>
+<body>
+
+  <h2>Lorem Ipsum</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi finibus eu velit sit amet egestas.
+     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dapibus felis lacus, in maximus elit faucibus eget. Ut auctor odio velit, a lobortis sem tincidunt nec. Ut commodo ante lorem, vitae mattis lacus suscipit ut. Proin venenatis faucibus quam id vulputate. Nullam sed odio sed erat maximus facilisis.
+  </p>
+<button id="Toggles">Toggles</button>
+<h2>Part B</h2>
+<table>
+<tr><td>ID</td><td>TYPE</td></tr>
+<tr><td class="fruits">1</td><td>Kiwi</td></tr>
+<tr><td class="fruits">2</td><td>Oranges</td></tr>
+<tr><td class="fruits">3</td><td>Dragonfruits</td></tr>
+<tr><td class="fruits">4</td><td>Strawberries</td></tr>
+<tr><td class="fruits">5</td><td>blackberries</td></tr>
+
+
+
+</table>
+
+
+<script type="text/javascript">
+$("#Toggles").click(function(){
+  $("p").toggle();
+})
+$(".fruits").click(function(){
+  alert($(this).text()+ " " +$(this).next().text());
+})
+</script>
+
+</body>
+</html>

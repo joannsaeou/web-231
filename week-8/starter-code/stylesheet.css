@@ -1,0 +1,9 @@
+/* CSS files for week-8
+*/
+
+tr:nth-child(even) {background-color: lightblue;}
+h2  {background-color:green; padding-bottom: 20px; }
+p, button, table {padding-left: 20px;  } 
+html {font-family: 'Roboto', sans-serif; }
+th { background-color: mediumblue;
+    color: white;  }
